@@ -1,4 +1,4 @@
-FROM ubuntu as ubuntu1
+FROM ubuntu:jammy as ubuntu1
 
 RUN apt update && apt upgrade -y
 
