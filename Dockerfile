@@ -10,6 +10,8 @@ RUN git clone https://github.com/jpillora/chisel
 
 WORKDIR /root/chisel
 
+RUN git pull
+
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o chisel .
 
 RUN chmod +x chisel
