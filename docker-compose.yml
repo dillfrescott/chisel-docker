@@ -1,0 +1,9 @@
+services:
+  chisel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - CHISEL_PASSWORD="changeme"
+    ports:
+      - "1234:1234"
