@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    restart: always
     environment:
       - CHISEL_PASSWORD="changeme"
     ports:
